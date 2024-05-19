@@ -8,10 +8,22 @@
 $(call inherit-product, device/xiaomi/chime/device-lime.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := halcyon_lime
+PRODUCT_NAME := lineage_lime
 PRODUCT_DEVICE := lime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 9T
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+          RISING_MAINTAINER="r1ckk"
+
+TARGET_ENABLE_BLUR := false
+WITH_GMS := true
+RISING_MAINTAINER := r1ckk
+RISING_BUILDTYPE := UNOFFICIAL
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+
